@@ -1,0 +1,10 @@
+.home-content-left {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.home-paragraph {
+    margin: 0;
+}

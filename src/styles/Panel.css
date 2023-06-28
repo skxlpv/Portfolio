@@ -1,10 +1,12 @@
 .home-content-panel {
     display: flex;
     flex-direction: row;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 130px;
-    padding-bottom: 130px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     font-size: 20px;
 }
 
@@ -26,23 +28,25 @@
 }
 
 .home-content-right img {
-    width: 100%;
+    width: 200px;
     border-radius: 10px;
+    padding-right: 50px;
 }
 
 .home-content-left img {
-    width: 100%;
+    width: 200px;
     border-radius: 10px;
+    padding-left: 50px;
 }
 
 .home-paragraph-left {
     margin: 0;
     text-align: start;
-    width: 80%;
+    width: 90%;
 }
 
 .home-paragraph-right {
     margin: 0;
     text-align: end;
-    width: 80%;
+    width: 90%;
 }

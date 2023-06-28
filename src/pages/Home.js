@@ -3,32 +3,35 @@ import PageTitle from "../components/PageTitle"
 import PanelLeft from "../components/PanelLeft";
 import PanelRight from "../components/PanelRight"
 
+import Coding from '../images/coding.png'
+import Information from '../images/information.png'
+
 const Home = (props) => (
     <div className="home-container">
-        {/* Title */}
         <PageTitle title={props.title}/>
         <p><i>Let's get started!</i></p>
 
-        {/* Main content */}
         <PanelLeft 
-            title='Where am I?'
+            title='What is it all about?'
             description='
-            Why bother writing boring CV documents to introduce yourself, 
-            when you can create a product, which will take care of it?'
+            The website is designed to provide information about the author
+            in a more modern way. At least, that`s what has been planned ¯\_(ツ)_/¯
+            I`ve always thought meeting with a person should be an expirience,
+            not just another record in a database.
+            '
             textPosition='left'
-            imgPath={null}
+            imgPath={Coding}
         />
         <PanelRight 
-            title='Why the website?'
+            title='How does it work?'
             description='
-            Let me ask a counter question: why bother writing boring CV documents to introduce yourself, 
-            when you can create a product, which will fully take care of it? :^)
-            I`ve always thought about storing all my career information in one single place 
-            due to it`s convinience.
+            All the provided information was divided into smaller pieces and put into separate pages.
+            You can access desired info by clicking on the link in the top right corner.
             '
             textPosition='right'
-            imgPath={null}
+            imgPath={Information}
         />
+        <h1>So let's get started, shall we?</h1>
     </div>
 )
 

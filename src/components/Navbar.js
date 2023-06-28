@@ -1,9 +1,9 @@
 import React from 'react'
 import '../styles/Navbar.css'
 
-export default function Navbar(){
+export default function Navbar(props){
     return(
-        <div className='navbar-container'>
+        <div style={{"box-shadow": `0px -10px 30px 1px ${props.navbarShadowColor}`}} className='navbar-container'>
             <div className='navbar-list-container'>
                 <ul className='navbar-list'>
                     <li><a href='/'>Home</a></li>

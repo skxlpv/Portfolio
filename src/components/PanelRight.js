@@ -2,12 +2,11 @@ import React from "react";
 import '../styles/Panel.css'
 
 export default function PanelRight(props){
-
     let hasImage = props.imgPath? true : false
     return(
         <div className="home-content-panel">
             <div className="home-content-left">
-                {hasImage? <img src={props.imgPath}></img> : null}
+                {hasImage? <img src={props.imgPath} alt=""></img> : null}
             </div>
     
             <div className="home-content-right">

@@ -1,0 +1,39 @@
+.footer-container {
+    /* background-color: red; */
+    margin-top: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    outline: 2px solid black;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    /* background-color: green; */
+    width: 300px;
+    align-items: flex-start;
+    outline: 1px solid black;
+}
+
+.column h4 {
+    display: flex;
+    align-items: center;
+}
+
+.column img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.column-title{
+    display: flex;
+    justify-content: flex-start;
+    width: 200px;
+}
+
+.column-item {
+    margin: 10px;
+    margin-left: 0px;
+}

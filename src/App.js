@@ -1,5 +1,5 @@
 //other
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";  
 import './App.css';
 
@@ -14,16 +14,19 @@ import Projects from './pages/Projects'
 import NotFound from './pages/NotFound'
 
 function App() {
+  
+  const [navbarShadow, setNavbarShadow] = useState(null)
+
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar navbarShadow={navbarShadow}/>
 
         <BrowserRouter>
           <Routes>
-            <Route index element={<Home title='Welcome!'/>} />
-            <Route path="about" element={<About title='About'/>} />
-            <Route path="projects" element={<Projects title='Projects'/>} />
-            <Route path="*" element={<NotFound title='404'/>} />
+            <Route index element={<Home title='Welcome!' setNavbarShadow={setNavbarShadow}/>} />
+            <Route path="about" element={<About title='About' setNavbarShadow={setNavbarShadow}/>} />
+            <Route path="projects" element={<Projects title='Projects' setNavbarShadow={setNavbarShadow}/>} />
+            <Route path="*" element={<NotFound title='404' setNavbarShadow={setNavbarShadow}/>} />
           </Routes>
         </BrowserRouter>
       

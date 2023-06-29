@@ -26,11 +26,12 @@ function App() {
             <Route index element={<Home title='Welcome!' setNavbarShadow={setNavbarShadow}/>} />
             <Route path="about" element={<About title='About' setNavbarShadow={setNavbarShadow}/>} />
             <Route path="projects" element={<Projects title='Projects' setNavbarShadow={setNavbarShadow}/>} />
+            <Route path="resume" element='' />
             <Route path="*" element={<NotFound title='404' setNavbarShadow={setNavbarShadow}/>} />
           </Routes>
         </BrowserRouter>
       
-      <Footer/>
+      <Footer navbarShadow={navbarShadow}/>
     </div>
   );
 }

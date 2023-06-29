@@ -17,22 +17,24 @@ function Home(props){
             <p><i>Let's get started!</i></p>
 
             <PanelLeft 
-                title='What is it all about?'
+                title='What is this all about?🤔'
                 description='
+                I`ve always thought meeting with a person should be an expirience,
+                not just another record in a database.
                 The website is designed to provide information about the author
                 in a more modern way. At least, that`s what has been planned ¯\_(ツ)_/¯
-                I`ve always thought meeting with a person should be an expirience,
-                not just another record in a database, so here we come!
+                Anyway, here we come!
                 '
                 textPosition='left'
                 imgPath={Coding}
             />
             <PanelRight 
-                title='How does it work?'
+                title='⚙️How does it work?'
                 description='
                 All the provided information was divided into smaller pieces 
                 and put into separate pages for the convinience.
                 You can access desired info by clicking on the link in the top right corner.
+                There is also included a page with a short resume, which sums it all up.
                 So let`s get started, shall we?)
                 '
                 textPosition='right'

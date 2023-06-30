@@ -3,7 +3,7 @@ import PageTitle from "../components/PageTitle"
 
 function Projects(props){
     useEffect(() => {
-        props.setNavbarShadow('rgba(0, 120, 30, 0.8)')
+        props.setNavbarShadow('rgba(86, 0, 120, 0.8)')
     }, [props])
 
     return(

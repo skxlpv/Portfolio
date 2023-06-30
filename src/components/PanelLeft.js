@@ -2,7 +2,9 @@ import React from "react";
 import '../styles/Panel.css'
 
 export default function PanelLeft(props){
-    let hasImage = props.imgPath? true : false
+    let hasImage = props.img? true : false
+    let hoverClassName = props.isImageHoverable? "image-hover" : null
+
     return(
         <div className="home-content-panel">
             <div className="home-content-left">
@@ -13,7 +15,7 @@ export default function PanelLeft(props){
             </div>
 
             <div className="home-content-right">
-                {hasImage? <img src={props.imgPath} alt=""></img> : null}
+                {hasImage? <img className={hoverClassName} style={props.imgStyle} src={props.img} alt=""></img> : null}
             </div>
         </div>
     )

@@ -14,6 +14,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
 .column h4 {
@@ -29,7 +30,7 @@
 }
 
 .column img {
-    width: 30px;
+    width: 40px;
     margin-right: 5px;
 }
 

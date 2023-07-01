@@ -41,7 +41,7 @@ function Home(props){
                 img={Coding}
             />
             <PanelRight 
-                title='⚙️How does it work?'
+                title='How does it work?⚙️'
                 description={parse(howDoesItWorkDescription)}
                 img={Information}
             />

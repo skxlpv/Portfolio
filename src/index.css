@@ -8,6 +8,25 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: white;
+  background-color: rgb(3, 0, 30);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+  border-radius: 7px;
+  outline: 1px solid rgba(255, 255, 255, 0.1)
+}
+
+mark {
+  background-color: rgb(240, 240, 240);
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 7px;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.emoji {
+  font-family: apple color emoji, segoe ui emoji, noto color emoji, android emoji, emojisymbols, emojione mozilla, twemoji mozilla, segoe ui symbol;
 }

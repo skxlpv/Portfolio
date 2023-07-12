@@ -1,0 +1,28 @@
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar-list-container {
+    margin-left: auto;
+}
+
+.navbar-list {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-list li {
+    margin-left: 10px;
+    margin-right: 40px;
+    font-size: large;
+}
+
+.navbar-list li a{
+    color: inherit;
+    text-decoration: inherit;
+}

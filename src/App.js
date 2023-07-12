@@ -8,9 +8,9 @@ import Navbar from './components/Navbar'
 import Footer from "./components/Footer";
 
 //pages
-import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
+import Resume from "./pages/Resume";
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -20,17 +20,14 @@ function App() {
   return (
     <div className="App">
       <Navbar navbarShadow={navbarShadow}/>
-
         <BrowserRouter>
           <Routes>
-            <Route index element={<Home title='Welcome!' setNavbarShadow={setNavbarShadow}/>} />
-            <Route path="about" element={<About title='About' setNavbarShadow={setNavbarShadow}/>} />
+            <Route index element={<About title='Let`s meet!' setNavbarShadow={setNavbarShadow}/>} />
             <Route path="projects" element={<Projects title='Projects' setNavbarShadow={setNavbarShadow}/>} />
-            <Route path="resume" element='' />
+            <Route path="resume" element={<Resume title='Resume' setNavbarShadow={setNavbarShadow}/>} />
             <Route path="*" element={<NotFound title='404' setNavbarShadow={setNavbarShadow}/>} />
           </Routes>
         </BrowserRouter>
-      
       <Footer navbarShadow={navbarShadow}/>
     </div>
   );

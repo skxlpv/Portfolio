@@ -1,9 +1,9 @@
 import React from "react";
-import '../styles/Panel.css'
+import '../styles/components/Panel.css'
 
-export default function PanelLeft(props){
+import Image from "./Image";
 
-    let hasImage = props.imgPath? true : false
+export default function Panel(props){
     return(
         <div className="home-content-panel">
             <div className="home-content-left">
@@ -14,7 +14,11 @@ export default function PanelLeft(props){
             </div>
 
             <div className="home-content-right">
-                {hasImage? <img src={props.imgPath}></img> : null}
+                <Image 
+                    imgStyle={props.imgStyle}
+                    imgSrc={props.img}
+                    isHoverable={props.isImageHoverable}
+                />
             </div>
         </div>
     )

@@ -1,0 +1,41 @@
+.footer-container {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.column h4 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 50px;
+    margin: 0;
+}
+
+.column img {
+    width: 45px;
+}
+
+.column-title{
+    display: flex;
+    justify-content: flex-start;
+    width: 200px;
+}
+
+.column-item-anchor {
+    color: inherit;
+    text-decoration: none;
+}

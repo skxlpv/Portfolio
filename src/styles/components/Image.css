@@ -1,0 +1,19 @@
+.image-hover {
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: black 5px 5px 8px 0.1px;
+}
+
+@media (min-width: 768px) {
+    .image-hover {
+        border-radius: 15px;
+        width: 230px;
+        box-shadow: black 5px 5px 8px 0.1px;
+        transition: 0.7s;
+    }
+    
+    .image-hover:hover{
+        width: 260px;
+        transition: 0.7s;
+    }
+}

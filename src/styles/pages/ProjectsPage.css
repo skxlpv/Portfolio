@@ -1,0 +1,21 @@
+.projects-div {
+    flex-wrap: wrap;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects-div a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media (min-width: 768px){
+    .projects-div {
+        /* width: 800px; */
+        flex-wrap: wrap;
+    }    
+}
+

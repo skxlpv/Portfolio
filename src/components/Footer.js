@@ -10,13 +10,21 @@ import Phone from '../images/icons/Phone.png'
 export default function Footer(props){
 
     function copyNumber(){
-        navigator.clipboard.writeText("+380965639681")
-        alert('Phone number has been coppied!')
+        try {
+            navigator.clipboard.writeText("+380965639681")
+            alert('Phone number has been coppied!')
+        } catch (error) {
+            alert('Can`t copy text because of insecure origin, meaning your connection is NOT SECURE')
+        }
     }
 
     function copyEmail(){
-        navigator.clipboard.writeText("skxlpv@gmail.com")
-        alert('Email has been coppied!')
+        try {
+            navigator.clipboard.writeText("skxlpv@gmail.com")
+            alert('Email has been coppied!')   
+        } catch (error) {
+            alert('Can`t copy text because of insecure origin, meaning your connection is NOT SECURE')
+        }
     }
 
     let buttonStyle = {

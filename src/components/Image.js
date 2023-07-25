@@ -1,11 +1,10 @@
 import React from "react";
+import '../styles/components/Image.css'
 
 export default function Image(props){
-    let hoverClassName = props.isHoverable? "image-hover" : null
+    let hover = props.isHoverable? "image-hover" : null
 
     return(
-        <>
-            <img className={hoverClassName} style={props.imgStyle} src={props.imgSrc} alt=""></img>
-        </>
+        <img className={hover} src={props.imgSrc} alt=""></img>
     )
 }

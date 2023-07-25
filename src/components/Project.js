@@ -4,19 +4,22 @@ import "../styles/components/Project.css"
 import Image from '../components/Image'
 
 export default function Project(props){
+    let directionClass = props.directionClass? `project-div ${props.directionClass}` : null
+
     return(
-        <div className="project-box">
-            <Image 
-                imgStyle={props.imgStyle}
-                imgSrc={props.img}
-                isHoverable={props.isImageHoverable}
-            />
-            <div className="box-title">
-                <h3>{props.title}</h3>
+        <div className={directionClass}>
+            <div className="project-image">
+                <a href={props.projectLink}>
+                    <Image
+                        imgSrc={props.imgSrc}
+                    />
+                </a>
             </div>
-            
-            <div className="box-description">
-                <p>{props.description}</p>
+            <div className="project-text">
+                <h1 className="project-title">
+                    <a href={props.projectLink}>{props.title}</a>
+                </h1>
+                <p className="project-description">{props.description}</p>
             </div>
         </div>
     )

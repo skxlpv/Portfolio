@@ -1,6 +1,6 @@
 export const letsMeetDescription = `
-    <mark>My name is Alex!</mark> A 20 y.o. university student, who is truly passionate about web-development, computer science, game development and programming in a whole.
-    I love creating things, seeing them come to life and watching them grow.<br>
+    <mark>My name is Alex!</mark> A 19 y.o. university student, who is truly passionate about web-development, computer science, game development and programming in a whole.
+    Love creating things, seeing them come to life, grow and develop.
     Glad to see you, too!
 `
 

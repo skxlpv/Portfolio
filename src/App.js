@@ -10,7 +10,6 @@ import Footer from "./components/Footer";
 //pages
 import About from './pages/About'
 import Projects from './pages/Projects'
-import Resume from "./pages/Resume";
 import NotFound from './pages/NotFound'
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
           <Routes>
             <Route index element={<About title='Let`s meet!' setNavbarShadow={setNavbarShadow}/>} />
             <Route path="projects" element={<Projects title='Projects' setNavbarShadow={setNavbarShadow}/>} />
-            <Route path="resume" element={<Resume title='Resume' setNavbarShadow={setNavbarShadow}/>} />
             <Route path="*" element={<NotFound title='404' setNavbarShadow={setNavbarShadow}/>} />
           </Routes>
         </BrowserRouter>
